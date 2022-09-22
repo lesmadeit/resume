@@ -7,7 +7,7 @@ from . models import(
     Portfolio,
     Blog,
     Certificate,
-    Skill
+    Skill,
     )
 
 

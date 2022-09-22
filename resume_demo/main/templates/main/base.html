@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% block title %}{%endblock%}</title>
+    <title>{% block title %}{% endblock %}</title>
     <meta name="author" content="Leslie">
     <link rel="canonical" href="{{request.path}}"/>
     <link rel="home" href="{% url 'main:home' %}"/>
@@ -31,9 +31,7 @@
 
     {% include 'main/partials/messages.html' %}
     {% include 'main/partials/nav.html' %}
-
-    {% block content %}
-    {% endblock %}
+    {% block content %}{% endblock %}
 
     
 
